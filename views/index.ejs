@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" href="./favicon.png"> -->
+    <title>Store Products API</title>
+    <style>
+        @font-face {
+            font-family:'coolvetica' ;
+            src: url('/coolvetica.otf');
+        }
+
+        @font-face {
+            font-family: 'metropolis' ;
+            src: url('/metropolis.otf');
+        }
+
+        .by{
+            margin-bottom: 0.5rem;
+
+        }
+
+        .sub-heading{
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+        }
+
+       body{
+        font-family: metropolis;
+       }
+
+        .heading{
+            font-family: coolvetica;
+            font-size:4rem;
+  background-image: linear-gradient(45deg, #63113e, #6842af);
+ 
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        }
+
+        .name{
+            font-weight: bold;
+        }
+
+        .title{
+            color:gray;
+            text-transform: none!important;
+        }
+
+        .social-links{
+            display:flex;
+            align-items: center;
+            margin:1rem 0rem;
+        }
+
+        .description{
+            
+            white-space: pre-line;
+            width:50rem;
+            line-height: 1.3rem;
+            font-size: 1rem;
+            
+        }
+
+        .inactive{
+            margin-left:0.3rem;
+            color:grey;
+        }
+
+        .image{
+            height:4rem;
+        }
+
+        .git{
+            height:3.5rem;
+        }
+
+        .route-name{
+            display: flex;
+            justify-content: flex-start;
+            color: #63113e!important;
+            font-weight: bold;
+        }
+
+        .route-label{
+            width:10rem;
+            font-weight:bold;
+            
+        }
+
+        
+        .contain{
+           margin:3rem 3rem;
+        }
+
+
+
+        .route{
+            display:flex;
+            margin-bottom: 0.5rem;
+        }
+        .sub-head{
+        font-family: coolvetica;
+        font-size:2rem;
+        margin-bottom:0.5rem;
+        background-image: linear-gradient(45deg, #63113e, #6842af);
+ 
+ background-size: 100%;
+ background-repeat: repeat;
+
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+        }
+
+        @media screen and (max-width:768px){
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="heading">Store Products API</div>
+        <div class="by">Developed By</div>
+        <div class="sub-heading">  <span class="name">
+
+            Helix W. Chipofya </span> 
+            <span class="title">
+
+               | Software Engineer, Web Developer
+            </span>
+        </div>
+        </span>
+        <div class="social-links">
+            <div class="link-img">
+                
+                <a href="https://github.com/Helixmw" target="black" class="link">
+                    <img src="/logo-github.svg" alt="" class="image git">
+                </a>
+            </div>
+            <div class="link-img">
+            <a href="https://linkedin.com/in/wonganichipofya" target="black" class="link">
+                <img src="/logo-linkedin.svg" alt="" class="image lnk">
+            </a>
+            </div>
+        </div>
+        <div class="description">This is a store products API built with Express.JS, Mongoose, MongoDB and EJS. Add Edit and Delete routes have been marked forbidden and will not work.</div>
+        <!-- <div class="description">This is A simple Store Products API specially designed for showcasing knowledge in API development. The API was developed utilizing node.js and is supported by a MongoDB Database remotely. Get endpoints are only accessible on this API.</div> -->
+            <div class="sub-head">Routes</div>
+            <div class="route">
+                <span class="route-label">
+                    Get Products
+                    </span>
+                <span class="route-name">
+                /api/Products
+                <span>
+
+                </span>
+                </div>
+            <div class="route">
+                <span class="route-label">
+                    Get Product
+                    </span>
+                <span class="route-name">
+                    /api/Products/{id}
+                <span>
+
+                </span>
+                </div>
+            <div class="route">
+                <span class="route-label">
+                    Get Categories
+                    </span>
+                <span class="route-name">
+                    /api/Category
+                <span>
+
+                </span>
+                </div>
+            <div class="route">
+                <span class="route-label">
+                    Get Category
+                    </span>
+                <span class="route-name">
+                    /api/Category/{id}
+                <span>
+
+                </span>
+                </div>
+            <div class="route">
+                <span class="route-label">
+                    Get Cat. Products
+                    </span>
+                <span class="route-name">
+                    /api/Products/Category/{id}
+                <span>
+
+                </span>
+                </div>
+            <div class="route">
+                <span class="route-label">
+                    Get Brands
+                    </span>
+                <span class="route-name">
+                    /api/Brands
+                </span>
+
+                </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Add Brand
+                        </span>
+                    <span class="route-name">
+                        /api/Brands <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Add Category
+                        </span>
+                    <span class="route-name">
+                        /api/Category <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Add Product
+                        </span>
+                    <span class="route-name">
+                        /api/Products <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Edit Category
+                        </span>
+                    <span class="route-name">
+                        /api/Category/{id} <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Edit Brand
+                        </span>
+                    <span class="route-name">
+                        /api/Brand/{id} <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Delete Category
+                        </span>
+                    <span class="route-name">
+                        /api/Category/{id} <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+                <div class="route">
+                    <span class="route-label">
+                        Delete Brand
+                        </span>
+                    <span class="route-name">
+                        /api/Brand/{id} <span class="inactive">(Forbidden)</span>
+                    </span>
+    
+                    </span>
+                </div>
+    </div>
+</body>
+</html>
