@@ -2,6 +2,6 @@
 
 A store products API built with ExpressJS, Mongoose, MongoDB and EJS.
 
-<br><br>Live: https://helixmw-products-api.onrender.com
+<br>Live: https://helixmw-products-api.onrender.com
 <br><br>
 <img src="./images/img.png"/>
